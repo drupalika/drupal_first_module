@@ -1,0 +1,10 @@
+<?php
+
+global $language;
+
+custom_dpm($language);
+
+
+function custom_dpm($param) {
+	drupal_set_message('<pre style="direction: ltr !important; text-align: left !important">' . print_r($param,TRUE) . "</pre>");
+}
