@@ -1,10 +1,17 @@
 <?php
 
-global $language;
+function drupalika_module_menu() {
+  $items = array();
+  
+  $items['drupalika/develop'] = array(
+    'title' => 'Developing a new module',
+    'page callback' => 'drupalika_develop_page',
+    'access callback' => TRUE,
+  );
+  
+  return $items;
+}
 
-custom_dpm($language);
-
-
-function custom_dpm($param) {
-	drupal_set_message('<pre style="direction: ltr !important; text-align: left !important">' . print_r($param,TRUE) . "</pre>");
+function drupalika_develop_page() {
+  return "This is the content of drupalika/develop page.";
 }

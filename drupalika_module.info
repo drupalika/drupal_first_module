@@ -1,4 +1,4 @@
-name = Test
-description = Test module for drupalika.org
+name = Drupalika First Module
+description = This is a short description about module
 core = 7.x
 package = Drupalika
